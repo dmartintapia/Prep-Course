@@ -37,8 +37,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
 
-  var sum = x + y;
-  return sum;
+  return x + y;
   
 }
 
@@ -46,8 +45,8 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   
-  var res = x - y;
-  return res;
+  
+  return  x - y;
 
 }
 
@@ -55,8 +54,8 @@ function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
 
-  var mult = x * y;
-  return mult;
+ 
+  return x * y;
   
 }
 
@@ -64,8 +63,8 @@ function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
 
-  var div = x/y;
-  return div;
+   
+  return x/y;
   
 }
 
@@ -74,11 +73,10 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if (x===y){
-    return true;
-  }else{
+  if (x===y)return true;
+  
    return false; 
-  }
+  
   
   
 }
@@ -87,11 +85,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(str1.length === str2.length){
-      return true;
-  }else{
+  if(str1.length === str2.length) return true;
+  
       return false;
-  }
+  
 }
 
 function menosQueNoventa(num) {
@@ -99,23 +96,19 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if(num<90){
-
-      return true;
-  }else{
+  if(num<90) return true;
+  
       return false;
-}
+
 }
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-    if(num>50){
-
-      return true;
-  }else{
+    if(num>50) return true;
+  
       return false;
-}
+
 }
 
 function obtenerResto(x, y) {
@@ -131,12 +124,10 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-      if(num % 2 ==0 ){
-
-          return true;
-      }else{
+      if(num % 2 ==0 )return true;
+      
           return false;
-           }
+           
   
 }
 
@@ -144,13 +135,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-        if(num % 2 !==0 ){
-
-          return true;
-      }else{
+        if(num % 2 !==0 )return true;
           return false;
            }
-}
+
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -216,14 +204,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + " "+apellido;
+  return `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola "+ nombre + "!";
+  return `Hola ${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -261,12 +249,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var vocal = letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u";
+  let vocal = letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u";
   if(letra.length > 1) return "Dato incorrecto";
   if(vocal) return "Es vocal";
   return "Dato incorrecto";
 }
-
 
 
 // No modificar nada debajo de esta línea
