@@ -6,8 +6,9 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
   //var   x, y ;
-  if(x>y)return x ;
-  return y;
+  //if(x>y)return x ;
+  //return y;
+  return (x>y)?(x):(y);
 }
 
 function mayoriaDeEdad(edad) {
@@ -60,15 +61,20 @@ switch(color){
 
 }
 
+
+
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero===5 )return true ;
-  if(numero===10)return true ;
-  return false ;
+  //if(numero===5 )return true ;
+  //if(numero===10)return true ;
+  //return false ;
+
+  return (numero===5 || numero===10)?(true):(false);
+  //return false
 }
 
 function estaEnRango(numero) {
@@ -146,11 +152,11 @@ function esVerdadero(valor){
   if(valor === true){
     return "Soy verdadero";
 
-  }else if(valor === false){
+  }
 
     return "Soy falso";
 
-  }
+  
 
 }
 
@@ -171,7 +177,7 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
 var  tostr = numero.toString(); 
- if(tostr.length === 3 )return true;
+ if(parseInt(tostr.length) === 3 )return true;
  return false; 
 }
 
@@ -179,6 +185,10 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+
+
+
+
 
 var num = 1;
 var suma = numero;
