@@ -7,7 +7,7 @@ function obtenerMayor(x, y) {
   // Tu código:
   //var   x, y ;
   if(x>y)return x ;
-  return y ;
+  return y;
 }
 
 function mayoriaDeEdad(edad) {
